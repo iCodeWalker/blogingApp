@@ -1,0 +1,54 @@
+.table_login_button{
+
+    display:inline-block;
+    padding:0.46em 1.6em;
+    border:0.1em solid green;
+    
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    background-color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+    font-size: 20px;
+}
+.table_login_button:hover{
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color: green;
+    border-color: green;
+    font-size: 20px;
+    font-weight: 800;
+}
+.link_style_login{
+    text-decoration: none;
+    color: green;
+    border-color: greenyellow;
+    font-weight: bold;
+}
+.main{
+    margin: 60px;
+}
+h1{
+    font-size: 35px;
+    font-weight: 800;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    margin: 20px;
+    color: cadetblue;
+}
+h2{
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    margin: 10px;
+    margin-bottom: 20px;
+    color: cornflowerblue;
+
+}

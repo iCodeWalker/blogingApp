@@ -2,16 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
+import {Provider} from 'react-redux';
+import { blogReducer } from './reducers/blogReducers';
 
+
+if(localStorage.getItem('blogs')==null)
+  localStorage.setItem('blogs',JSON.stringify([]))
+
+let initialState = {
+  currentIndex : -1,
+  list:JSON.parse(localStorage.getItem('blogs'))
+}
+
+var store = createStore(blogReducer,initialState);
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
